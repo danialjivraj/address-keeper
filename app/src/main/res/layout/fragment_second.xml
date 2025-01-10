@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SecondFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+
+        <!-- weather icon -->
+        <ImageView
+            android:id="@+id/imageview_weather_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_toStartOf="@id/textview_temperature"
+            android:src="@drawable/ic_weather"
+            app:tint="@color/primary" />
+
+        <!-- nopicture placeholder for non existent images -->
+        <ImageView
+            android:id="@+id/imageview_user"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_nopicture" />
+
+        <!-- when name is too long, it becomes scrollable -->
+        <ScrollView
+            android:id="@+id/scrollview_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageview_user"
+            android:layout_toStartOf="@id/textview_temperature"
+            android:layout_toEndOf="@id/imageview_user"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <!-- user name -->
+            <TextView
+                android:id="@+id/textview_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:lineSpacingExtra="4dp"
+                android:text="User Name"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </ScrollView>
+
+        <!-- weather temperature information -->
+        <TextView
+            android:id="@+id/textview_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageview_user"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:gravity="end"
+            android:text="--ºC"
+            android:textColor="@color/primary"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        android:elevation="4dp">
+
+        <!-- google maps map -->
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- location address -->
+        <TextView
+            android:id="@+id/textview_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:scrollHorizontally="false"
+            android:text="Location Info"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- edit icon near the location text -->
+        <ImageView
+            android:id="@+id/imageview_edit_location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_edit"
+            app:tint="@color/primary" />
+    </LinearLayout>
+
+    <!-- edit location text -->
+    <EditText
+        android:id="@+id/edittext_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="Enter location"
+        android:lineSpacingExtra="4dp"
+        android:maxLines="2"
+        android:padding="10dp"
+        android:scrollHorizontally="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <!-- button to confirm the address text changes -->
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/primary"
+            android:elevation="2dp"
+            android:text="Confirm"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <!-- button to cancel the address text changes -->
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/darker_gray"
+            android:elevation="2dp"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- goes back to entity screen (first fragment) -->
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/primary"
+        android:elevation="2dp"
+        android:text="@string/previous"
+        android:textColor="@android:color/white" />
+</LinearLayout>

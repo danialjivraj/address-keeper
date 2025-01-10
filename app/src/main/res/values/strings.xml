@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Address Keeper</string>
+    <string name="action_settings">Settings</string>
+    <!-- strings used for fragments for navigation -->
+    <string name="first_fragment_label">Entities</string>
+    <string name="second_fragment_label">Map</string>
+    <string name="next">Next</string>
+    <string name="previous">Go Back!</string>
+    <string name="api_weather_key">@string/weather_api_key</string>
+</resources>
