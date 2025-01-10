@@ -29,20 +29,19 @@ WEATHER_API_KEY=YOUR_OPEN_WEATHER_API_KEY
 Sync the project afterwards and run the app.
 
 ## Preview
-
-https://github.com/user-attachments/assets/57b80566-a5ad-464e-8b73-60beed01ede5
+https://github.com/user-attachments/assets/15493618-6684-41c7-a257-08dc8f95e78c
 
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/user-attachments/assets/1b8ef46d-4d69-4389-88d6-ddf3537b9e15" width="32.9%" />
-    <img src="https://github.com/user-attachments/assets/740d7e6d-fa92-4759-86f9-1fad974fbbc2" width="32.9%" />
-    <img src="https://github.com/user-attachments/assets/a0ff3bbf-af79-41e2-8c48-71c35ffefe3e" width="32.9%" />
-    <img src="https://github.com/user-attachments/assets/2281aed5-6702-4625-8d3f-6de8976b8bbe" width="32.9%" />
-    <img src="https://github.com/user-attachments/assets/ab8a2908-648f-4743-9086-b54ff18cf4b6" width="32.9%" />
-    <img src="https://github.com/user-attachments/assets/4d5859bd-df7b-4dce-be84-d43def23518f" width="32.9%" />
-    <img src="https://github.com/user-attachments/assets/1fb8c2ca-c8ad-4899-b223-3da9e8a98a63" width="32.9%" />
-    <img src="https://github.com/user-attachments/assets/10baea59-36b7-42a1-916d-78bec35eec87" width="32.9%" />
-    <img src="https://github.com/user-attachments/assets/33cddfa9-dc64-4d08-a00c-083f46d861b5" width="32.9%" />
-    <img src="https://github.com/user-attachments/assets/aabcf877-8810-49ae-a4e0-90848418aaad" width="32.9%" />
-    <img src="https://github.com/user-attachments/assets/73c923c7-e0ae-45fc-b89e-5ec853a8b402" width="32.9%" />
-    <img src="https://github.com/user-attachments/assets/4cc7e698-fc6a-4d79-a573-31d19f1594f3" width="32.9%" />
+    <img src="https://github.com/user-attachments/assets/d7d424f1-6b80-41a8-82c0-27a7958692ba" width="32.9%" />
+    <img src="https://github.com/user-attachments/assets/eb7d4f5e-ebdc-4c01-b6e3-966e5e572d80" width="32.9%" />
+    <img src="https://github.com/user-attachments/assets/c8e39705-1b08-4ccc-a19a-98bbaa8f4209" width="32.9%" />
+    <img src="https://github.com/user-attachments/assets/132b94ac-e140-47bb-b663-cf6fa93cd4e7" width="32.9%" />
+    <img src="https://github.com/user-attachments/assets/e802d009-8319-4f9b-bae7-2d0acc60875e" width="32.9%" />
+    <img src="https://github.com/user-attachments/assets/ccd5c1db-9580-4712-a3e0-1c41bff28a32" width="32.9%" />
+    <img src="https://github.com/user-attachments/assets/91e13199-a679-46b7-be4e-2284ff527a1c" width="32.9%" />
+    <img src="https://github.com/user-attachments/assets/21d2f5a0-8832-48f1-aec7-8d6ed8a8b417" width="32.9%" />
+    <img src="https://github.com/user-attachments/assets/ab22f4ad-936c-4d4f-8249-6a1a3194bce3" width="32.9%" />
+    <img src="https://github.com/user-attachments/assets/74c1897a-fd27-457f-b36b-f43ead9d9561" width="32.9%" />
+    <img src="https://github.com/user-attachments/assets/5629d69f-6889-4a16-bf16-a6b9eb49f8b8" width="32.9%" />
+    <img src="https://github.com/user-attachments/assets/5c693e1a-aa35-49dd-90b5-ed2e773939e7" width="32.9%" />
 </div>
